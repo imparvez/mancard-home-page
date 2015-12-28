@@ -1,0 +1,7 @@
+{
+  "name": "Parvez",
+  "version": "0.0.1",
+  "devDependencies": {
+    "jquery": "~2.1.4"
+  }
+}
