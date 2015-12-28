@@ -327,6 +327,69 @@ body {
 				}
 			}
 		}
+
+		footer {
+			background: #2a394c; 
+
+			ul.nav-links {
+		    list-style: none;
+		    overflow: hidden;
+		    display: inline-block;
+
+		    li {
+			    float: left;
+			    margin-left: 46px; 
+
+			    &:first-child {
+			    	margin-left: 0;
+			    }
+
+			    a {
+			    	text-decoration: none;
+				    font-family: Gotham;
+				    color: #768ba4;
+				    font-size: 15px;
+				    font-weight: 300;
+				    line-height: 28px;
+				    text-align: left;
+			    }
+				}
+			}
+
+			p.copyright-text {
+				display: inline-block;
+		    vertical-align: top;
+		    margin-top: 18px;
+		    font-family: Gotham;
+		    color: #768ba4;
+		    font-size: 15px;
+		    font-weight: 300;
+		    line-height: 28px;
+		    text-align: left;
+		    margin-left: 63px;
+			}
+
+			ul.tnc-links {
+				list-style: none;
+		    float: right;
+		    padding: 0;
+
+		    li {
+		    	float: left;
+    			margin-left: 1px;
+
+    			a {
+    				text-decoration: none;
+				    font-family: Gotham;
+				    color: #768ba4;
+				    font-size: 15px;
+				    font-weight: 300;
+				    line-height: 28px;
+				    text-align: left;
+    			}
+		    }
+			}
+		}
 	}
 }
 

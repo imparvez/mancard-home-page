@@ -515,3 +515,57 @@ body .container .main .lower-section .lower-left-section .post-cards p {
   line-height: 20px;
   text-align: left;
 }
+body .container footer {
+  background: #2a394c;
+}
+body .container footer ul.nav-links {
+  list-style: none;
+  overflow: hidden;
+  display: inline-block;
+}
+body .container footer ul.nav-links li {
+  float: left;
+  margin-left: 46px;
+}
+body .container footer ul.nav-links li:first-child {
+  margin-left: 0;
+}
+body .container footer ul.nav-links li a {
+  text-decoration: none;
+  font-family: Gotham;
+  color: #768ba4;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: left;
+}
+body .container footer p.copyright-text {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 18px;
+  font-family: Gotham;
+  color: #768ba4;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: left;
+  margin-left: 63px;
+}
+body .container footer ul.tnc-links {
+  list-style: none;
+  float: right;
+  padding: 0;
+}
+body .container footer ul.tnc-links li {
+  float: left;
+  margin-left: 1px;
+}
+body .container footer ul.tnc-links li a {
+  text-decoration: none;
+  font-family: Gotham;
+  color: #768ba4;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: left;
+}
