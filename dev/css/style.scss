@@ -123,6 +123,133 @@ body {
 	    		}
 	    	}
 		}
+
+		.main {
+			background: #fff;
+
+			.uppper-section {
+				background: #1fbfed;
+
+				.uppper-left-section {
+					max-width: 27%;
+					width: 100%;
+					display: inline-block;
+
+					img { 
+						margin-top: 15px;
+						vertical-align: top; 
+					}
+
+					.text-content {
+						margin-left: 6%;
+						display: inline-block; 
+
+						p {
+							margin-top: 26px;
+							margin-bottom: 0;
+							color:  #fff;
+							font-family: Gotham;
+							font-size: 20px;
+							font-weight: 700;
+							line-height: 28px;
+							text-align: left;
+						}
+
+						span {
+						  color: #fff;
+					    font-family: Gotham;
+					    font-size: 13px;
+					    font-weight: 100;
+					    line-height: 28px;
+					    text-align: left;
+						}
+
+						ul {
+							list-style: none;
+    					overflow: hidden;
+					    padding: 0;
+					    margin-top: 0;
+
+					    li { 
+					    	float: left; 
+
+					    	&.pictures,
+					    	&.write,
+					    	&.profile {
+					    		margin-left: 28px;
+					    	}
+					    }
+
+						}
+					}
+				}
+
+				.uppper-right-section {
+					display: inline-block;
+			    vertical-align: top;
+			    max-width: 72%;
+			    width: 100%;
+			    height: 136px;
+			    background: #23ceff;
+			    padding-bottom: 5px;
+					
+					p.text-content {
+						font-family: Gotham;
+						color:  #ffffff;
+						font-size: 20px;
+						font-weight: 700;
+						line-height: 28px;
+						text-align: center;
+						margin-top: 10px;
+					}
+					.activity-cards {
+						width: 47%;
+				    display: inline-block;
+				    vertical-align: top;
+				    margin-bottom: 10px;
+				    margin-left: 14px;
+
+    				img {
+    					width: 20%;
+    					vertical-align: top;
+    				}
+
+    				.activity-card-contents {
+    					width: 78%;
+    					display: inline-block;
+
+    					p { 
+    						margin: 0 0 0 5px;
+						    font-family: Gotham;
+						    color: #1b2838;
+						    font-size: 13px;
+						    font-weight: 300;
+						    line-height: 17px;
+						    text-align: left;
+    					}
+    					span {
+	    					font-family: Gotham;
+						    color: #ffffff;
+						    font-size: 14px;
+						    font-weight: 300;
+						    line-height: 20px;
+						    text-align: left;
+						    margin-top: 3px;
+    						display: inline-block;
+    						margin-left: 5px;
+	    				}
+	    				img.activity-imgs {
+	    					margin-top: 3px;
+	    					margin-left: 32px;
+    						display: inline-block;
+    						width: 21px;
+    						height: 19px;
+	    				}
+    				}
+					}
+				}
+			}
+		}
 	}
 }
 
