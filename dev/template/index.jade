@@ -8,7 +8,7 @@ html(lang="en")
     meta(name='viewport', content='width=device-width, initial-scale=1')
 
     //Title of the page
-    title Title
+    title ManCard Community
 
     //FavIcon
     link(rel='shortcut icon' href='favicon.ico')
@@ -22,8 +22,32 @@ html(lang="en")
     //[endif]
 
   body
-    section
-        h1 HELLO WORLD
+    div.container
+        div.wrapper
+            header
+                h1
+                    a(href="index.html" title="ManCard Community") ManCard Community
+                nav
+                    ul
+                        li 
+                            a.profile(href="profile.html") Profile
+                        li 
+                            a.communities(href="communities.html") Communities
+                        li 
+                            a.search(href="search.html") Search
+                        li 
+                            a.news(href="news.html") News
+                        li 
+                            a.logout(href="logout.html") Logout
+                ul.sharre-icons
+                    li
+                        a.facebook(href="FIXME") facebook
+                    li
+                        a.twitter(href="FIXME") twitter
+                    li
+                        a.gplus(href="FIXME") googleplus
+                    li
+                        a.youtube(href="FIXME") youtube
     
     script(src='https://code.jquery.com/jquery-2.1.4.min.js')
     script(src='assets/script/main.min.js')
