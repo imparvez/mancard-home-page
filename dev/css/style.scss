@@ -16,6 +16,9 @@
 
 //Custom Styling
 body {
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
 	.container {
 		background: #1b2838;
 
@@ -125,7 +128,7 @@ body {
 		}
 
 		.main {
-			background: #fff;
+			background: #1b2838;
 
 			.uppper-section {
 				background: #1fbfed;
@@ -247,6 +250,80 @@ body {
 	    				}
     				}
 					}
+				}
+			}
+
+			.lower-section {
+				.lower-left-section {
+					width: 27.4%;
+			    display: inline-block;
+			    border-right: 1px solid #23ceff;
+
+			    h2 {
+			    	font-family: Gotham;
+				    color: #ffffff;
+				    font-size: 20px;
+				    font-weight: 700;
+				    line-height: 20px;
+				    text-align: left;
+				    padding-bottom: 11px;
+				    border-bottom: 1px solid #23ceff;
+				    max-width: 305px;
+				    width: 100%;
+			    }
+
+			    .community-cards {
+			    	img { vertical-align: top; }
+
+			    	.community-text {
+			    		display: inline-block;
+    					margin: 12px 0 0 14px;
+    					border-bottom: 1px solid #ccc;
+
+    					p {
+    						font-family: Gotham;
+						    color: #ffffff;
+						    font-size: 16px;
+						    font-weight: 700;
+						    line-height: 20px;
+						    text-align: left;
+    					}
+
+    					ul {
+    						list-style: none;
+						    padding: 0;
+						    margin-left: 13px;
+
+						    li {
+						    	font-family: Gotham;
+							    color: #ffffff;
+							    font-size: 16px;
+							    font-weight: 300;
+							    line-height: 20px;
+							    text-align: left;
+						    }
+    					}
+			    	}
+			    }
+			    .post-cards {
+			    	margin-bottom: 20px;
+
+			    	img {
+			    		width: 25%;
+			    	}
+			    	p {
+			    		width: 71%;
+					    display: inline-block;
+					    vertical-align: top;
+					    margin: 0px 0 0 6px;
+					    font-family: Gotham;
+							color:  #ffffff;
+							font-size: 16px;
+							font-weight: 300;
+							line-height: 20px;
+							text-align: left;
+			    	}
+			    }
 				}
 			}
 		}

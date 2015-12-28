@@ -237,6 +237,10 @@ th {
   padding: 0;
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 body .container {
   background: #1b2838;
 }
@@ -339,7 +343,7 @@ body .container .wrapper ul.sharre-icons li a:hover {
   opacity: .8;
 }
 body .container .main {
-  background: #fff;
+  background: #1b2838;
 }
 body .container .main .uppper-section {
   background: #1fbfed;
@@ -446,4 +450,68 @@ body .container .main .uppper-section .uppper-right-section .activity-cards .act
   display: inline-block;
   width: 21px;
   height: 19px;
+}
+body .container .main .lower-section .lower-left-section {
+  width: 27.4%;
+  display: inline-block;
+  border-right: 1px solid #23ceff;
+}
+body .container .main .lower-section .lower-left-section h2 {
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #23ceff;
+  max-width: 305px;
+  width: 100%;
+}
+body .container .main .lower-section .lower-left-section .community-cards img {
+  vertical-align: top;
+}
+body .container .main .lower-section .lower-left-section .community-cards .community-text {
+  display: inline-block;
+  margin: 12px 0 0 14px;
+  border-bottom: 1px solid #ccc;
+}
+body .container .main .lower-section .lower-left-section .community-cards .community-text p {
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+}
+body .container .main .lower-section .lower-left-section .community-cards .community-text ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 13px;
+}
+body .container .main .lower-section .lower-left-section .community-cards .community-text ul li {
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+}
+body .container .main .lower-section .lower-left-section .post-cards {
+  margin-bottom: 20px;
+}
+body .container .main .lower-section .lower-left-section .post-cards img {
+  width: 25%;
+}
+body .container .main .lower-section .lower-left-section .post-cards p {
+  width: 71%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 0 0 6px;
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
 }
