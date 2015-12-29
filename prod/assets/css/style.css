@@ -249,21 +249,50 @@ body .container .wrapper {
   width: 100%;
   margin: 0 auto;
 }
+@media screen and (max-width: 1144px) {
+  body .container .wrapper header {
+    overflow: hidden;
+  }
+}
 body .container .wrapper header
 h1 {
   display: inline-block;
-  max-width: 383px;
+  max-width: 355px;
   width: 100%;
   vertical-align: top;
 }
+@media screen and (max-width: 922px) {
+  body .container .wrapper header
+  h1 {
+    max-width: 100%;
+    text-align: center;
+  }
+}
 body .container .wrapper header
 h1 a {
-  max-width: 383px;
+  max-width: 355px;
   width: 100%;
   height: 91px;
   display: inline-block;
   background: url("../images/logo.png") no-repeat;
+  background-size: contain;
   text-indent: -999999px;
+}
+body .container .wrapper .mobile-nav {
+  display: none;
+  width: 35px;
+  height: 35px;
+  margin-left: 45px;
+  background: #fff;
+  margin: 0 auto;
+}
+body .container .wrapper .mobile-nav img {
+  width: 100%;
+}
+@media screen and (max-width: 922px) {
+  body .container .wrapper .mobile-nav {
+    display: block;
+  }
 }
 body .container .wrapper nav {
   max-width: 562px;
@@ -275,9 +304,23 @@ body .container .wrapper nav ul {
   list-style: none;
   overflow: hidden;
 }
+body .container .wrapper nav ul.nav-expanded-menu {
+  display: block;
+}
+@media screen and (max-width: 922px) {
+  body .container .wrapper nav ul {
+    display: none;
+  }
+}
 body .container .wrapper nav ul li {
   margin-left: 10px;
   float: left;
+}
+@media screen and (max-width: 922px) {
+  body .container .wrapper nav ul li {
+    float: none;
+    margin-left: 0;
+  }
 }
 body .container .wrapper nav ul li a {
   padding: 4px;
@@ -295,14 +338,34 @@ body .container .wrapper nav ul li a:hover {
 body .container .wrapper nav ul li a.communities {
   margin-left: 26px;
 }
+@media screen and (max-width: 922px) {
+  body .container .wrapper nav ul li a.communities {
+    margin-left: 0;
+  }
+}
 body .container .wrapper nav ul li a.search {
   margin-left: 28px;
+}
+@media screen and (max-width: 922px) {
+  body .container .wrapper nav ul li a.search {
+    margin-left: 0;
+  }
 }
 body .container .wrapper nav ul li a.news {
   margin-left: 27px;
 }
+@media screen and (max-width: 922px) {
+  body .container .wrapper nav ul li a.news {
+    margin-left: 0;
+  }
+}
 body .container .wrapper nav ul li a.logout {
   margin-left: 27px;
+}
+@media screen and (max-width: 922px) {
+  body .container .wrapper nav ul li a.logout {
+    margin-left: 0;
+  }
 }
 body .container .wrapper ul.sharre-icons {
   max-width: 155px;
@@ -310,6 +373,19 @@ body .container .wrapper ul.sharre-icons {
   margin-top: 45px;
   float: right;
   list-style: none;
+}
+@media screen and (max-width: 1144px) {
+  body .container .wrapper ul.sharre-icons {
+    margin: 46px 0 0;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1076px) {
+  body .container .wrapper ul.sharre-icons {
+    float: none;
+    overflow: hidden;
+    margin: 0 auto 15px;
+  }
 }
 body .container .wrapper ul.sharre-icons li {
   float: left;
@@ -348,8 +424,13 @@ body .container .main {
 body .container .main .uppper-section {
   background: #1fbfed;
 }
+@media screen and (max-width: 1192px) {
+  body .container .main .uppper-section {
+    text-align: center;
+  }
+}
 body .container .main .uppper-section .uppper-left-section {
-  max-width: 27%;
+  max-width: 324px;
   width: 100%;
   display: inline-block;
 }
@@ -387,18 +468,31 @@ body .container .main .uppper-section .uppper-left-section .text-content ul {
 }
 body .container .main .uppper-section .uppper-left-section .text-content ul li {
   float: left;
+  cursor: pointer;
 }
 body .container .main .uppper-section .uppper-left-section .text-content ul li.pictures, body .container .main .uppper-section .uppper-left-section .text-content ul li.write, body .container .main .uppper-section .uppper-left-section .text-content ul li.profile {
   margin-left: 28px;
 }
+body .container .main .uppper-section .uppper-left-section .text-content ul li:hover {
+  opacity: .8;
+}
 body .container .main .uppper-section .uppper-right-section {
   display: inline-block;
   vertical-align: top;
-  max-width: 72%;
+  max-width: 864px;
   width: 100%;
   height: 136px;
   background: #23ceff;
   padding-bottom: 5px;
+}
+@media screen and (max-width: 869px) {
+  body .container .main .uppper-section .uppper-right-section {
+    max-width: 100%;
+    display: block;
+    height: 100%;
+    text-align: center;
+    padding: 11px 0px;
+  }
 }
 body .container .main .uppper-section .uppper-right-section p.text-content {
   font-family: Gotham;
@@ -416,6 +510,13 @@ body .container .main .uppper-section .uppper-right-section .activity-cards {
   margin-bottom: 10px;
   margin-left: 14px;
 }
+@media screen and (max-width: 869px) {
+  body .container .main .uppper-section .uppper-right-section .activity-cards {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}
 body .container .main .uppper-section .uppper-right-section .activity-cards img {
   width: 20%;
   vertical-align: top;
@@ -423,6 +524,13 @@ body .container .main .uppper-section .uppper-right-section .activity-cards img 
 body .container .main .uppper-section .uppper-right-section .activity-cards .activity-card-contents {
   width: 78%;
   display: inline-block;
+}
+@media screen and (max-width: 869px) {
+  body .container .main .uppper-section .uppper-right-section .activity-cards .activity-card-contents {
+    width: 100%;
+    display: block;
+    margin: 15px 0;
+  }
 }
 body .container .main .uppper-section .uppper-right-section .activity-cards .activity-card-contents p {
   margin: 0 0 0 5px;
@@ -432,6 +540,11 @@ body .container .main .uppper-section .uppper-right-section .activity-cards .act
   font-weight: 300;
   line-height: 17px;
   text-align: left;
+}
+@media screen and (max-width: 869px) {
+  body .container .main .uppper-section .uppper-right-section .activity-cards .activity-card-contents p {
+    text-align: center;
+  }
 }
 body .container .main .uppper-section .uppper-right-section .activity-cards .activity-card-contents span {
   font-family: Gotham;
@@ -450,11 +563,19 @@ body .container .main .uppper-section .uppper-right-section .activity-cards .act
   display: inline-block;
   width: 21px;
   height: 19px;
+  cursor: pointer;
+}
+body .container .main .uppper-section .uppper-right-section .activity-cards .activity-card-contents img.activity-imgs:hover {
+  opacity: .8;
 }
 body .container .main .lower-section .lower-left-section {
-  width: 27.4%;
+  width: 27%;
   display: inline-block;
-  border-right: 1px solid #23ceff;
+}
+@media screen and (max-width: 1192px) {
+  body .container .main .lower-section .lower-left-section {
+    display: none;
+  }
 }
 body .container .main .lower-section .lower-left-section h2 {
   font-family: Gotham;
@@ -496,36 +617,357 @@ body .container .main .lower-section .lower-left-section .community-cards .commu
   font-weight: 300;
   line-height: 20px;
   text-align: left;
+  margin: 8px 0;
+}
+body .container .main .lower-section .lower-left-section .recent-posts-box {
+  margin-top: 54px;
 }
 body .container .main .lower-section .lower-left-section .post-cards {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 body .container .main .lower-section .lower-left-section .post-cards img {
-  width: 25%;
+  width: 32%;
 }
 body .container .main .lower-section .lower-left-section .post-cards p {
-  width: 71%;
+  width: 62%;
   display: inline-block;
   vertical-align: top;
   margin: 0px 0 0 6px;
   font-family: Gotham;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+}
+body .container .main .lower-section .lower-right-section {
+  width: 71%;
+  display: inline-block;
+  vertical-align: top;
+  border-left: 1px solid #23ceff;
+}
+@media screen and (max-width: 1192px) {
+  body .container .main .lower-section .lower-right-section {
+    width: 100%;
+    border-left: none;
+  }
+}
+body .container .main .lower-section .lower-right-section .header-post-section {
+  border-bottom: 1px solid #23ceff;
+  margin-left: 34px;
+  overflow: hidden;
+}
+@media screen and (max-width: 1192px) {
+  body .container .main .lower-section .lower-right-section .header-post-section {
+    margin: 0 34px;
+  }
+}
+body .container .main .lower-section .lower-right-section .header-post-section h2 {
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  padding-bottom: 11px;
+  max-width: 190px;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 0;
+}
+body .container .main .lower-section .lower-right-section .header-post-section button {
+  float: right;
+  margin-top: 13px;
+  background: #445366;
+  border-radius: 8px;
+  -webkit-appearance: none;
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 15px;
+  text-align: center;
+  border: none;
+  padding: 6px;
+  max-width: 206px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: .5s ease all;
+}
+body .container .main .lower-section .lower-right-section .header-post-section button:hover {
+  background: #fff;
+  color: #445366;
+}
+body .container .main .lower-section .lower-right-section .content-type {
+  padding: 12px 0;
+  border-bottom: 1px solid #445366;
+  margin-left: 34px;
+}
+body .container .main .lower-section .lower-right-section .content-type .img-container {
+  max-width: 400px;
+  width: 100%;
+  display: inline-block;
+  margin: 4px 0 0 0;
+  vertical-align: top;
+}
+body .container .main .lower-section .lower-right-section .content-type .img-container img {
+  width: 100%;
+}
+body .container .main .lower-section .lower-right-section .content-type .textual-feeds {
+  max-width: 390px;
+  width: 100%;
+  display: inline-block;
+  margin-left: 19px;
+}
+body .container .main .lower-section .lower-right-section .content-type .textual-feeds .profile-info {
+  margin-left: 19px;
+}
+body .container .main .lower-section .lower-right-section .content-type .textual-feeds .profile-info img {
+  float: left;
+  width: 60px;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+body .container .main .lower-section .lower-right-section .content-type .textual-feeds .profile-info .user-details {
+  display: inline-block;
+  margin-left: 10px;
+}
+body .container .main .lower-section .lower-right-section .content-type .textual-feeds .profile-info .user-details p.user-name {
+  margin-bottom: 3px;
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+}
+body .container .main .lower-section .lower-right-section .content-type .textual-feeds .profile-info .user-details p.user-name span {
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+}
+body .container .main .lower-section .lower-right-section .content-type .textual-feeds .profile-info .user-details .time-span {
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+}
+body .container .main .lower-section .lower-right-section .content-type .textual-feeds h3.post-header {
+  font-family: Gotham;
+  color: #23ceff;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 26px;
+  text-align: left;
+}
+body .container .main .lower-section .lower-right-section .content-type .textual-feeds p.post-text {
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+}
+body .container .main .lower-section .lower-right-section .content-type .textual-feeds .comments-box span {
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+}
+body .container .main .lower-section .lower-right-section .feeds-one {
+  border-bottom: 1px solid #445366;
+  margin-left: 33px;
+}
+body .container .main .lower-section .lower-right-section .feeds-one .textual-feeds {
+  width: 96%;
+  display: inline-block;
+  margin: 24px 0 38px 0;
+}
+body .container .main .lower-section .lower-right-section .feeds-one .textual-feeds .profile-info img {
+  float: left;
+  width: 60px;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+body .container .main .lower-section .lower-right-section .feeds-one .textual-feeds .profile-info .user-details {
+  display: inline-block;
+  margin-left: 10px;
+}
+body .container .main .lower-section .lower-right-section .feeds-one .textual-feeds .profile-info .user-details p.user-name {
+  margin-bottom: 3px;
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+}
+body .container .main .lower-section .lower-right-section .feeds-one .textual-feeds .profile-info .user-details p.user-name span {
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+}
+body .container .main .lower-section .lower-right-section .feeds-one .textual-feeds .profile-info .user-details .time-span {
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+}
+body .container .main .lower-section .lower-right-section .feeds-one .textual-feeds h3.post-header {
+  font-family: Gotham;
+  color: #23ceff;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 26px;
+  text-align: left;
+}
+body .container .main .lower-section .lower-right-section .feeds-one .textual-feeds p.post-text {
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+}
+body .container .main .lower-section .lower-right-section .feeds-one .textual-feeds .comments-box span {
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+}
+body .container .main .lower-section .lower-right-section .feeds-two {
+  border-bottom: 1px solid #445366;
+  margin-left: 33px;
+}
+body .container .main .lower-section .lower-right-section .feeds-two .textual-feeds {
+  width: 96%;
+  display: inline-block;
+  margin: 24px 0 38px 0;
+}
+body .container .main .lower-section .lower-right-section .feeds-two .textual-feeds .profile-info img {
+  float: left;
+  width: 60px;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+body .container .main .lower-section .lower-right-section .feeds-two .textual-feeds .profile-info .user-details {
+  display: inline-block;
+  margin-left: 10px;
+}
+body .container .main .lower-section .lower-right-section .feeds-two .textual-feeds .profile-info .user-details p.user-name {
+  margin-bottom: 3px;
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+}
+body .container .main .lower-section .lower-right-section .feeds-two .textual-feeds .profile-info .user-details p.user-name span {
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+}
+body .container .main .lower-section .lower-right-section .feeds-two .textual-feeds .profile-info .user-details .time-span {
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+}
+body .container .main .lower-section .lower-right-section .feeds-two .textual-feeds h3.post-header {
+  font-family: Gotham;
+  color: #23ceff;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 26px;
+  text-align: left;
+}
+body .container .main .lower-section .lower-right-section .feeds-two .textual-feeds ul {
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+body .container .main .lower-section .lower-right-section .feeds-two .textual-feeds ul li {
+  float: left;
+  width: 240px;
+  margin-left: 29px;
+}
+body .container .main .lower-section .lower-right-section .feeds-two .textual-feeds ul li:first-child {
+  margin-left: 0;
+}
+@media screen and (max-width: 1188px) {
+  body .container .main .lower-section .lower-right-section .feeds-two .textual-feeds ul li:first-child {
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 1188px) {
+  body .container .main .lower-section .lower-right-section .feeds-two .textual-feeds ul li {
+    float: none;
+    margin: 10px 0;
+    width: 75%;
+  }
+}
+body .container .main .lower-section .lower-right-section .feeds-two .textual-feeds ul li img {
+  width: 100%;
+}
+body .container .main .lower-section .lower-right-section .feeds-two .textual-feeds .comments-box span {
+  font-family: Gotham;
+  color: #ffffff;
+  font-size: 14px;
   font-weight: 300;
   line-height: 20px;
   text-align: left;
 }
 body .container footer {
   background: #2a394c;
+  margin-top: 42px;
+}
+@media screen and (max-width: 1192px) {
+  body .container footer {
+    padding: 10px 0;
+  }
 }
 body .container footer ul.nav-links {
+  padding: 0;
   list-style: none;
   overflow: hidden;
   display: inline-block;
 }
+@media screen and (max-width: 1192px) {
+  body .container footer ul.nav-links {
+    overflow: hidden;
+    display: block;
+    text-align: center;
+  }
+}
 body .container footer ul.nav-links li {
   float: left;
   margin-left: 36px;
+}
+@media screen and (max-width: 1192px) {
+  body .container footer ul.nav-links li {
+    float: none;
+    margin-left: 0;
+  }
 }
 body .container footer ul.nav-links li:first-child {
   margin-left: 0;
@@ -539,6 +981,9 @@ body .container footer ul.nav-links li a {
   line-height: 28px;
   text-align: left;
 }
+body .container footer ul.nav-links li a:hover {
+  color: #fff;
+}
 body .container footer p.copyright-text {
   display: inline-block;
   vertical-align: top;
@@ -551,14 +996,34 @@ body .container footer p.copyright-text {
   text-align: left;
   margin-left: 4%;
 }
+@media screen and (max-width: 1192px) {
+  body .container footer p.copyright-text {
+    margin-left: 0;
+    text-align: center;
+    display: block;
+  }
+}
 body .container footer ul.tnc-links {
   list-style: none;
   float: right;
   padding: 0;
 }
+@media screen and (max-width: 1192px) {
+  body .container footer ul.tnc-links {
+    float: none;
+    text-align: center;
+    overflow: hidden;
+  }
+}
 body .container footer ul.tnc-links li {
   float: left;
-  margin-left: 1px;
+  margin-left: 16px;
+}
+@media screen and (max-width: 1192px) {
+  body .container footer ul.tnc-links li {
+    float: none;
+    margin-left: 0;
+  }
 }
 body .container footer ul.tnc-links li a {
   text-decoration: none;
@@ -568,4 +1033,7 @@ body .container footer ul.tnc-links li a {
   font-weight: 300;
   line-height: 28px;
   text-align: left;
+}
+body .container footer ul.tnc-links li a:hover {
+  color: #fff;
 }
